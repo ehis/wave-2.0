@@ -15,7 +15,7 @@ export default function Home() {
       </div>
       <div className="text-white flex flex-col gap-4 self-end w-full md:w-9/12 -mr-10">
         <div className="p-8 text-3xl md:text-6xl bg-zinc-800">
-          a music collaboration and workflow tool
+          A music collaboration and workflow company
         </div>
       </div>
       <footer className="self-start text-white text-3xl">
