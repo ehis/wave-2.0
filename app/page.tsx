@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Rotate from "./components/Rotate";
 
 export default function Home() {
   return (
@@ -13,11 +14,12 @@ export default function Home() {
         />
         <h1 className="text-white text-6xl md:text-8xl">wave</h1>
       </div>
-      {/* TODO: animated silver vinyl spinning */}
-      <div className="text-white flex flex-col gap-4 self-end w-full md:w-9/12 -mr-10">
+      <div className="text-white flex md:flex-row gap-4 self-end w-full md:w-9/12">
+        <Rotate bg="#1535c4" height="auto" />
         <div className="p-8 text-3xl md:text-6xl bg-zinc-800">
           /wāv/ a music collaboration and workflow company
         </div>
+        <Rotate bg="#ffd917" height="auto" />
       </div>
       <footer className="self-start text-white text-3xl">
         info@itswave.app
