@@ -22,9 +22,3 @@ export default function Rotate({
     />
   );
 }
-
-/**
- * ==============   Styles   ================
- */
-
-const box = {};
