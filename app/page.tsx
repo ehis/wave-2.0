@@ -20,14 +20,14 @@ export default function Home() {
           className="p-8 text-3xl md:text-6xl"
           style={{ backgroundColor: "#828282" }}
         >
-          /wāv/ a music collaboration and workflow company
+          /wāv/ is a music collaboration company.
         </div>
-        <Rotate bg="#ffd917" height="auto" />
+        <Rotate bg="#ffd917" height="auto" isSquare />
       </div>
       <div className="text-white flex md:flex-row gap-4 self-start w-full md:w-9/12">
-        <Rotate bg="#ff5a00" height="auto" />
+        <Rotate bg="#ff5a00" height="auto" isSquare />
         <div className="p-8 text-3xl md:text-6xl">
-          an easy way to upload, and share your creations with your circle.
+          streamline your workflow, and share your creations with your circle.
         </div>
         <Rotate bg="#e7e7e7" height="auto" />
       </div>
@@ -37,10 +37,9 @@ export default function Home() {
           className="p-8 text-3xl md:text-6xl"
           style={{ backgroundColor: "#828282" }}
         >
-          collaborate with your team and keep the conversation going in a single
-          place.
+          keep the threads going in a single place.
         </div>
-        <Rotate bg="#ff5a00" height="auto" />
+        <Rotate bg="#ff5a00" height="auto" isSquare />
       </div>
       <footer className="self-start text-white text-3xl">
         info@itswave.app
