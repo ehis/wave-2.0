@@ -1,5 +1,6 @@
 import Image from "next/image";
-import Rotate from "./components/Rotate";
+import Glass from "./components/glass";
+import Rotate from "./components/rotate";
 
 export default function Home() {
   return (
@@ -14,31 +15,27 @@ export default function Home() {
         />
         <h1 className="text-white text-6xl md:text-8xl">wave</h1>
       </div>
-      <div className="text-white flex md:flex-row gap-4 self-end w-full md:w-9/12">
+      <div className="flex md:flex-row gap-4 self-end w-full md:w-9/12">
         <Rotate bg="#1535c4" height="auto" />
-        <div
-          className="p-8 text-3xl md:text-6xl"
-          style={{ backgroundColor: "#828282" }}
-        >
-          /wāv/ is a music collaboration company.
-        </div>
+        <Glass>
+          <Subtitle>/wāv/ is a music collaboration company.</Subtitle>
+        </Glass>
         <Rotate bg="#ffd917" height="auto" isSquare />
       </div>
-      <div className="text-white flex md:flex-row gap-4 self-start w-full md:w-9/12">
+      <div className="flex md:flex-row gap-4 self-start w-full md:w-9/12">
         <Rotate bg="#ff5a00" height="auto" isSquare />
-        <div className="p-8 text-3xl md:text-6xl">
-          streamline your workflow, and share your creations with your circle.
-        </div>
+        <Glass>
+          <Subtitle>
+            streamline your workflow, and share your creations with your circle.
+          </Subtitle>
+        </Glass>
         <Rotate bg="#e7e7e7" height="auto" />
       </div>
-      <div className="text-white flex md:flex-row gap-4 self-end w-full md:w-9/12">
+      <div className="flex md:flex-row gap-4 self-end w-full md:w-9/12">
         <Rotate bg="#f73375" height="auto" />
-        <div
-          className="p-8 text-3xl md:text-6xl"
-          style={{ backgroundColor: "#828282" }}
-        >
-          keep the threads going in a single place.
-        </div>
+        <Glass>
+          <Subtitle>keep your threads going in a single place.</Subtitle>
+        </Glass>
         <Rotate bg="#ff5a00" height="auto" isSquare />
       </div>
       <footer className="self-start text-white text-3xl">
@@ -46,4 +43,8 @@ export default function Home() {
       </footer>
     </main>
   );
+}
+
+function Subtitle({ children }: { children: React.ReactNode }) {
+  return <div className="p-8 text-3xl md:text-6xl text-white">{children}</div>;
 }
