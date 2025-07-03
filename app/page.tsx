@@ -54,8 +54,11 @@ export default function Home() {
           </Glass>
           <Rotate bg="#ff5a00" height="auto" isSquare />
         </div>
-        <footer className="self-start text-white text-3xl mt-12">
-          info@itswave.app
+        <footer className="self-start text-white mt-12">
+          <div className="text-lg mt-2">
+            &copy; {new Date().getFullYear()} wave music and technology inc.
+          </div>
+          <div className="text-lg">info@itswave.app</div>
         </footer>
       </div>
     </main>
