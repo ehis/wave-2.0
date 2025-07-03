@@ -20,7 +20,7 @@ export default function Rotate({
         backgroundColor: bg,
       }}
       animate={{ rotate: 360 }}
-      transition={{ duration: 5 }}
+      transition={{ duration: 15 }}
     />
   );
 }
