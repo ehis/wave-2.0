@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Button from "./components/button";
 import Glass from "./components/glass";
 import Rotate from "./components/rotate";
 
@@ -6,17 +7,22 @@ export default function Home() {
   return (
     <main className="bg-black min-h-screen">
       <div className="flex flex-col py-20 px-4 gap-4 w-full md:max-w-4/5 mx-auto grow">
-        <div className="flex gap-4 self-start items-center flex-col md:flex-row md:gap-6">
-          <Image
-            src="/wave.svg"
-            alt="Wave logo"
-            width={180}
-            height={180}
-            priority
-          />
-          <h1 className="text-white text-6xl md:text-8xl">wave</h1>
+        <div className="flex justify-between items-center">
+          <div className="flex gap-4 self-start items-center flex-col md:flex-row md:gap-6">
+            <Image
+              src="/wave.svg"
+              alt="Wave logo"
+              width={180}
+              height={180}
+              priority
+            />
+            <h1 className="text-white text-6xl md:text-8xl">wave</h1>
+          </div>
+          <div>
+            <Button variant="secondary">Sign in</Button>
+          </div>
         </div>
-        <div className="flex md:flex-row gap-4 self-center w-full md:w-9/12">
+        <div className="flex md:flex-row gap-4 self-end w-full md:w-9/12">
           <Rotate bg="#1535c4" height="auto" />
           <Glass>
             <Subtitle>/wāv/ is a music collaboration company.</Subtitle>
